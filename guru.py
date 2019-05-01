@@ -5,11 +5,13 @@ import pyttsx3
 import random
 import datetime
 import smtplib, ssl
+from btu_scores import get_scores
 
 
 
 greetings = ['hey there', 'hello', 'hi', 'Hai', 'hey!', 'hey']
 question = ['how are you', 'ow are you doing']
+btu_questions = ["What is my scores","tell me my scores"]
 responses = ['Okay', "I'm fine"]
 var1 = ['who made you', 'who created you']
 var2 = ['I was created by Zhana right in her computer.', ' Zhana', 'Some girl whom i never got to know.']
@@ -153,6 +155,8 @@ def make_something(task):
             server.sendmail(sender_email, receiver_email, message)
             talk('Message sent sir')
             print("Message sent.")
+    elif task in btu_questions:
+        print(get_scores())
 
     else:
         talk("I'm not as smart as you think, sorry")

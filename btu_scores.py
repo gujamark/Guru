@@ -1,10 +1,21 @@
 import requests
 from bs4 import BeautifulSoup
+import pyttsx3
+
+def talk(words):
+    engine = pyttsx3.init()
+    engine.say(words)
+    engine.runAndWait()
+
 
 def get_scores():
+    talk("Enter Your Email or ID Number")
+    username = input("Enter Your Email/ID Number: ")
+    talk("Enter Your Password: ")
+    password = input("Enter Your Password: ")
     payload = {
-        "username" : input("Enter Your Email: "),
-        "password" : input("Enter Your Password: ")
+        "username" : username,
+        "password" : password
     }
 
     with requests.Session() as session:

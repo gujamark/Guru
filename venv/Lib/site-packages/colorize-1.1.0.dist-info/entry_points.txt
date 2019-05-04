@@ -1,0 +1,3 @@
+[console_scripts]
+colorize = colorize.__main__:main
+

@@ -1,0 +1,31 @@
+greetings = ['hey there', 'hello', 'hi', 'Hai', 'hey!', 'hey']
+question = ['how are you', 'ow are you doing']
+btu_questions = ["What are my scores", "tell me my scores"]
+responses = ['Okay', "I'm fine"]
+var1 = ['who made you', 'who created you']
+var2 = ['I was created by BTU STUDENTS right in their computer.', ' Zhana & Guja & Natalie',
+        'Some students whom i never got to know.']
+var3 = ['what time is it', 'what is the time', 'time']
+var4 = ['who are you', 'what is you name']
+var5 = ['where are you from', 'where are you now', 'from', 'where are you']
+cmd1 = ['open website']
+cmd2 = ['tell a joke', 'tell me a joke', 'say something funny', 'tell something funny']
+cmd3 = ["youtube", "search in youtube", "play a video", ]
+jokes = ['Can a kangaroo jump higher than a house? Of course, a house doesn’t jump at all.',
+         'My dog used to chase people on a bike a lot. It got so bad, finally I had to take his bike away.',
+         'Doctor: Im sorry but you suffer from a terminal illness and have only 10 to live.Patient: What do you mean, 10? 10 what? Months? Weeks?!"Doctor: Nine.']
+
+cmd4 = ['what is your color', 'what is your colour', 'your color', 'your colour?']
+colrep = ['Right now its rainbow', 'Right now its transparent', 'Right now its non chromatic']
+cmd5 = ['what is you favourite colour', 'what is your favourite colour', "what's your favourite colour",
+        "what's you favourite colour", 'color', 'colour']
+cmd6 = ['thank you', 'exit', 'close', 'goodbye', 'nothing', 'stop']
+cmd7 = ['weather', 'tell me weather']
+cmd8 = ["music", "play a song", "song", "spotify"]
+cmd9 = ['fb', 'Facebook', 'face']
+cmd10 = ['classroom', 'btu', 'btu', 'My workstation', 'open class', 'class']
+cmd11 = ['insta', 'instagram', 'inst']
+cmd12 = ["exchange rate", "what is exchange rate", "rate", "rage", "range", "exchange", "great", "change"]
+cmd13 = ["birthday", "tell me your birthday", "when is your birthday"]
+repfr6 = ["you're welcome", 'glad i could help you', 'see you later']
+fav_color = ['blue', 'pink', 'green', 'white']

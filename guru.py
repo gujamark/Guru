@@ -95,7 +95,7 @@ def make_something(task):
             soup = BeautifulSoup(r.html.html, "html.parser")
             h3 = soup.find("h3")
             a_link = h3.find_parent("a")["href"]
-            driver = webdriver.Firefox()
+            driver = webdriver.Chrome()
             driver.get(a_link)
             talk("I opened sir")
 

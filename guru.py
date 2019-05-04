@@ -1,4 +1,3 @@
-import geocoder as geocoder
 
 from imports import *
 
@@ -29,12 +28,7 @@ def command():
         print("I didn't understand")
         task = command()
 
-    if "guru" in task:
-        talk("I'm listening")
-        print("Speak")
-        return command()
-    else:
-        return task
+    return task
 
 
 def make_something(task):
@@ -66,7 +60,7 @@ def make_something(task):
     # name
     elif task in var4:
         talk('I am GURU')
-        with open("guru.txt","r") as f:
+        with open("guru.txt", "r") as f:
             robot = f.read()
             print(robot)
 
@@ -95,7 +89,7 @@ def make_something(task):
             soup = BeautifulSoup(r.html.html, "html.parser")
             h3 = soup.find("h3")
             a_link = h3.find_parent("a")["href"]
-            driver = webdriver.Firefox()
+            driver = webdriver.Chrome()
             driver.get(a_link)
             talk("I opened sir")
 
@@ -238,14 +232,14 @@ def make_something(task):
             driver.find_element_by_id("pass").send_keys(password)
             driver.find_element_by_id("loginbutton").click()
             driver.find_element_by_id("u_0_d")
-            talk("welcome to facaebook")
+            talk("welcome to Facebook")
         except selenium.common.exceptions.NoSuchElementException:
             print("Wrong Email/Password")
             talk("Wrong Email or Password")
 
     # classroom
     elif task in cmd10:
-        talk("Enter Your Email or ID Numbber")
+        talk("Enter Your Email or ID Number")
         email = input("Enter Your Email/ID: ")
         talk("Enter Your Password: ")
         password = input("Enter Your Password: ")
@@ -303,4 +297,3 @@ while True:
     make_something(command())
 
 # ქრისტე აღდგა და ჩვენ მაინც ამას ვწერდით!
-

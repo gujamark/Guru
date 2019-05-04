@@ -8,3 +8,4 @@ from requests_html import HTMLSession
 from bs4 import BeautifulSoup
 from speech_recognition import UnknownValueError
 from exchange_rate import get_exchanges
+import geocoder as geocoder
